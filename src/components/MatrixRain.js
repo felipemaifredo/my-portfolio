@@ -47,9 +47,7 @@ const MatrixRain = () => {
     useEffect(() => renderMatrix(ref));
 
     return (
-        <React.Fragment>
-            <canvas id="canvas1" ref={ref} />
-        </React.Fragment>
+        <canvas id="canvas1" ref={ref} />
     );
 };
 
