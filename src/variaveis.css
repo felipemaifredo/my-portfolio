@@ -1,0 +1,26 @@
+/*---- COLORS -----*/
+body[data-theme="t-light"] {
+    --color-1: #ffffff;
+    --color-2: #000000;
+    --color-3: #452e3c;
+    --color-4: #ff3d5a;
+    --color-5: #ffb969;
+    --color-6: #eaf27e;
+    --color-7: #3b8c88;
+    --color-8: #e0e0e0;
+    --color-9: #181818;
+    --color-10: #dbdbdb5e;
+}
+body[data-theme="t-dark"] {
+    --color-1: #000000;
+    --color-2: #ffffff;
+    --color-3: #22171e;
+    --color-4: #771b29;
+    --color-5: #6e512f;
+    --color-6: #787c43;
+    --color-7: #1f4d4a;
+    --color-8: #181818;
+    --color-9: #e0e0e0;
+    --color-10: #131313;
+}
+/*---- FIM COLORS -----*/
