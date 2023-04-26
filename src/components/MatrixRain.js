@@ -47,7 +47,7 @@ const MatrixRain = () => {
     useEffect(() => renderMatrix(ref));
 
     return (
-        <canvas id="canvas1" ref={ref} />
+        <canvas id="canvas1" ref={ref}></canvas>
     );
 };
 
