@@ -6,8 +6,9 @@ import {  HashRouter, Routes, Route,  } from 'react-router-dom';
 //Components
 import Navbar from './components/navbar/Navbar';
 
-//Pages
+//Rotas
 import Home from './routes/home/Home';
+import Projects from './routes/Projects/Projects';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path='/' element={<Home />}/>
+            <Route path='/projects/tools' element={<Projects />}/>
           </Routes>
       </HashRouter>
     </div>

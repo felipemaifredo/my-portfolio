@@ -1,9 +1,16 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
+//Assets
 import BRIcon from '../assets/icons/bra-icon.png';
 import USIcon from '../assets/icons/eua-icon.png';
 
+//Funcs Idioms
+import { changeTextsHomeBR, changeTextsHomeUS } from './TextsPages/TextsHome';
+import { changeTextsProjectsBR, changeTextsProjectsUS } from './TextsPages/TextsProjects';
+
 function ChangeIdiom() {
+  const location = useLocation().pathname;
   const [isBr, setIsBr] = useState(localStorage.getItem('isBr') === 'true' );
 
   const toggleIdiom = () => {
@@ -15,7 +22,7 @@ function ChangeIdiom() {
 
   useEffect(() => {
     verifyIdiom(isBr);
-  }, [isBr]);
+  });
 
   const verifyIdiom = (isBr) => {
     if (isBr) {
@@ -26,27 +33,31 @@ function ChangeIdiom() {
   };
 
   const changeTextsBR = () => {
+    switch (location) {
+      case '/':
+          changeTextsHomeBR();
+        break;
+      case '/projects/tools':
+          changeTextsProjectsBR();
+        break;
     
-    let TextsMenu = document.querySelectorAll('.texts-nav');
-    TextsMenu[1].innerText = 'Sobre';
-    TextsMenu[2].innerText = 'Habilidades';
-    TextsMenu[3].innerText = 'Projetos';
-    TextsMenu[4].innerText = 'Contato';
-
-    let TextsSec1 = document.querySelectorAll('.texts-sec1');
-    TextsSec1[0].innerText = 'Olá Mundo!';
+      default:
+        break;
+    }
   };
 
   const changeTextsUS = () => {
-
-    let TextsMenu = document.querySelectorAll('.texts-nav');
-    TextsMenu[1].innerText = 'About';
-    TextsMenu[2].innerText = 'Skills';
-    TextsMenu[3].innerText = 'Projects';
-    TextsMenu[4].innerText = 'Contact';
-
-    let TextsSec1 = document.querySelectorAll('.texts-sec1');
-    TextsSec1[0].innerText = 'Hello World!';
+    switch (location) {
+      case '/':
+          changeTextsHomeUS();
+        break;
+       case '/projects/tools':
+          changeTextsProjectsUS();
+        break;
+    
+      default:
+        break;
+    }
   };
 
   return (

@@ -45,7 +45,7 @@ const Navbar = () => {
             isHome ? (
               <a href={link} className="navigation-link texts-nav" onClick={verifyMenu}> {text} </a>
             ) : (
-              <Link to="/"> {text} </Link>
+              <Link to="/" className='texts-nav'> {text} </Link>
             )
         )
     };
@@ -65,16 +65,16 @@ const Navbar = () => {
                     {renderLink("Home", "#sec1" )}
                 </li>
                 <li className='nav-menu-itens'>
-                    {renderLink("Sobre", "#sec2" )}
+                    {renderLink("Sobre", "#about" )}
                 </li>
                 <li className='nav-menu-itens'>
-                    {renderLink("Habilidades", "#sec3" )}
+                    {renderLink("Habilidades", "#Skills" )}
                 </li>
                 <li className='nav-menu-itens'>
-                    {renderLink("Projetos", "#sec4" )}
+                    {renderLink("Projetos", "#Projects" )}
                 </li>
                 <li className='nav-menu-itens'>
-                    {renderLink("Contato", "#sec4" )}
+                    {renderLink("Contato", "#Contact" )}
                 </li>
             </ul>
             <ChangeIdiom />

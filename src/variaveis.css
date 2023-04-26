@@ -24,3 +24,8 @@ body[data-theme="t-dark"] {
     --color-10: #131313;
 }
 /*---- FIM COLORS -----*/
+
+:root {
+    --transition-original: all 1s;
+    --transition-hover: all .2s;
+}
