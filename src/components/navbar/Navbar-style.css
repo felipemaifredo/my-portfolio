@@ -12,6 +12,7 @@ nav {
     align-items: center;
     background-color: var(--color-8);
     border-radius: 50px;
+    z-index: 10;
 }
 
 nav img {

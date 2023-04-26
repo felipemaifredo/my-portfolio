@@ -17,7 +17,7 @@ function ScrollTo() {
   function scrollToIdOnClick(event) {
     event.preventDefault();
     const element = event.target.getAttribute('href');
-    const toSection = document.querySelector(element).offsetTop - 90;
+    const toSection = document.querySelector(element).offsetTop;
     
     window.scroll({
       top: toSection ,

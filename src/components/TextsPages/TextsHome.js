@@ -6,6 +6,15 @@ export const changeTextsHomeBR = () => {
       TextsMenu[3].innerText = 'Projetos';
       TextsMenu[4].innerText = 'Contato';
     };
+
+    let TextsSec1 = document.querySelectorAll('.texts-sec1');
+    if (TextsSec1) {
+      TextsSec1[0].innerText = 'Olá!';
+      TextsSec1[1].innerText = 'Sou o Felipe,';
+      TextsSec1[2].innerText = 'Desenvolvedor Web FullStack.';
+      TextsSec1[3].innerText = 'Portfolio e Trabalhos';
+      TextsSec1[4].innerText = 'de Felipe Maifredo';
+    }
     
     let TextsAbout = document.querySelectorAll('.texts-about');
     if (TextsAbout) {
@@ -36,6 +45,16 @@ export const changeTextsHomeBR = () => {
       TextsMenu[3].innerText = 'Projects';
       TextsMenu[4].innerText = 'Contact';  
     }
+
+    let TextsSec1 = document.querySelectorAll('.texts-sec1');
+    if (TextsSec1) {
+      TextsSec1[0].innerText = 'Hi!';
+      TextsSec1[1].innerText = "I'm Felipe,";
+      TextsSec1[2].innerText = 'FullStack Web Developer.';
+      TextsSec1[3].innerText = 'Portfolio and Works';
+      TextsSec1[4].innerText = 'of Felipe Maifredo';
+    }
+    
 
     let TextsAbout = document.querySelectorAll('.texts-about');
     if (TextsAbout) {
