@@ -53,7 +53,7 @@
     border-radius: 50%;
     height: 250px;
     border: 3px solid var(--color-2);
-    z-index: 1;
+    z-index: 2;
 }
 
     #sec1 .right-side-sec1 h2 {
@@ -62,7 +62,7 @@
         align-items: flex-start;
         justify-content: flex-start;
         color: var(--color-2);
-        z-index: 1;
+        z-index: 2;
         gap: 3px;
     }
 
@@ -76,7 +76,7 @@
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 0;
+    z-index: 1;
     position: absolute;
     background-color: #000000;
 }
