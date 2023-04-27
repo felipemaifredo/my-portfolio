@@ -37,7 +37,7 @@ function ChangeIdiom() {
       case '/':
           changeTextsHomeBR();
         break;
-      case '/projects/tools':
+      case '/projects':
           changeTextsProjectsBR();
         break;
     
@@ -51,7 +51,7 @@ function ChangeIdiom() {
       case '/':
           changeTextsHomeUS();
         break;
-       case '/projects/tools':
+       case '/projects':
           changeTextsProjectsUS();
         break;
     

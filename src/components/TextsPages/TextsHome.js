@@ -26,10 +26,24 @@ export const changeTextsHomeBR = () => {
     if (TextsSkills) {
       TextsSkills[0].innerText = 'Olá Mundo!';
     }
-
+  
     let TextsProjects = document.querySelectorAll('.texts-projects');
     if (TextsProjects) {
-      TextsProjects[0].innerText = 'Olá Mundo!';
+      TextsProjects[0].innerText = 'Projetos';
+      TextsProjects[1].innerText = 'Ferramentas criadas para treinar e me aprimorar em desenvolvimento web.';
+      TextsProjects[2].innerText = 'Acesse';
+
+      TextsProjects[3].innerText = 'Galeria';
+      TextsProjects[4].innerText = 'Sites prontos.';
+      TextsProjects[5].innerText = 'Acesse';
+
+      TextsProjects[6].innerText = 'Biblioteca';
+      TextsProjects[7].innerText = 'Componentes prontos que podem ser copiados.';
+      TextsProjects[8].innerText = 'Acesse';
+
+      TextsProjects[9].innerText = 'Trabalhos';
+      TextsProjects[10].innerText = 'Meus Trabalhos reais já feitos.';
+      TextsProjects[11].innerText = 'Acesse';
     }
 
     let TextsContact = document.querySelectorAll('.texts-contact');
@@ -67,12 +81,26 @@ export const changeTextsHomeBR = () => {
     if (TextsSkills) {
       TextsSkills[0].innerText = 'Hello World!';
     }
-
+    
     let TextsProjects = document.querySelectorAll('.texts-projects');
     if (TextsProjects) {
-      TextsProjects[0].innerText = 'Hello World!';
-    }
+      TextsProjects[0].innerText = 'Projects';
+      TextsProjects[1].innerText = 'Tools created to train and develop my skills.';
+      TextsProjects[2].innerText = 'Access';
 
+      TextsProjects[3].innerText = 'Gallery';
+      TextsProjects[4].innerText = 'Ready Sites.';
+      TextsProjects[5].innerText = 'Access';
+
+      TextsProjects[6].innerText = 'Library';
+      TextsProjects[7].innerText = 'Ready-made components that can be copied.';
+      TextsProjects[8].innerText = 'Access';
+
+      TextsProjects[9].innerText = 'Works';
+      TextsProjects[10].innerText = 'My real works already done.';
+      TextsProjects[11].innerText = 'Access';
+    }
+  
     let TextsContact = document.querySelectorAll('.texts-contact');
     if (TextsContact) {
       TextsContact[0].innerText = 'Hello World!';

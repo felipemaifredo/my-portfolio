@@ -9,6 +9,95 @@
     background-color: var(--color-1);
 }
 
-h1 {
+#Projects .box-sec-projects {
+    height: 70%;
+    width: 80%;
+    background-color: var(--color-10);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Projects .box-sec-projects .item-sec-projects {
+    height: 90%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+#Projects .box-sec-projects .item-sec-projects::after {
+    content: '';
+    position: absolute;
+    height: 50%;
+    right: 0;
+    height: 90%;
+    width: 2px;
+    background-color: var(--color-2);
+}
+
+#Projects .box-sec-projects .item-sec-projects:last-child::after {
+    transform: scale(0);
+}
+
+#Projects .box-sec-projects .item-sec-projects .img-box-item {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#Projects .box-sec-projects .item-sec-projects .img-box-item svg {
+    height: 100px;
+    width: 100px;
     color: var(--color-2);
+}
+
+#Projects .box-sec-projects .item-sec-projects .texts-box-item {
+    height: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#Projects .box-sec-projects .item-sec-projects .texts-box-item h3 {
+    text-align: center;
+    color: var(--color-2);
+    font-size: 2rem;
+    
+}
+
+#Projects .box-sec-projects .item-sec-projects .texts-box-item p {
+    text-align: center;
+    color: var(--color-2);
+    font-size: 1rem;
+    padding: 0px 15px;
+}
+
+#Projects .box-sec-projects .item-sec-projects .btn-box-item {
+    height: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+#Projects .box-sec-projects .item-sec-projects a {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
