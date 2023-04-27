@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import LogoFFD from '../../assets/icons/logo.png';
 
+import Scrollspy from 'react-scrollspy';
 //Components/Sections
 import { ChangeTheme } from '../ChangeTheme';
 import ChangeIdiom from '../ChangeIdiom';
@@ -59,8 +60,8 @@ const Navbar = () => {
 				<span className="line line2"></span>
 				<span className="line line3"></span>
             </button>
-            
-            <ul className='nav-menu'>
+
+            <Scrollspy items={['sec1', 'about', 'Skills', 'Projects', 'Contact' ]} currentClassName="destaque-nav" offset={-300} className='nav-menu'>
                 <li className='nav-menu-itens'>
                     {renderLink("Home", "#sec1" )}
                 </li>
@@ -76,7 +77,7 @@ const Navbar = () => {
                 <li className='nav-menu-itens'>
                     {renderLink("Contato", "#Contact" )}
                 </li>
-            </ul>
+            </Scrollspy>
             <ChangeIdiom />
             <ChangeTheme />
         </nav>

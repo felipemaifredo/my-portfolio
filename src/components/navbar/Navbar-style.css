@@ -25,7 +25,7 @@ nav .btn-menu {
 
 nav .nav-menu {
     display: flex;
-    gap: 20px;
+    gap: 5px;
 }
 
 nav .nav-menu .nav-menu-itens {
@@ -44,6 +44,13 @@ nav .nav-menu .nav-menu-itens a {
     font-weight: 600;
     text-transform: uppercase;
     font-size: .9rem;
+    padding: 5px 8px;
+
+}
+
+nav .nav-menu .destaque-nav a {
+    background-color: var(--color-2);
+    color: var(--color-1);
 }
 
 nav .box-languages {
@@ -167,6 +174,7 @@ nav .box-change-theme .swith .switch-wrapper .swith-b {
                 z-index: -1;
                 pointer-events: all;
                 transition: var(--transition-hover);
+                padding: 10px 0px;
             }
         
             nav .btn-menu {
