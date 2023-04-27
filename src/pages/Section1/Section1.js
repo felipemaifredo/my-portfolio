@@ -2,18 +2,43 @@
 import imgFelipe from '../../assets/imgs/felipe1.JPG';
 //Imports
 import './Section1-style.css';
+import { useState, useEffect } from 'react';
 //Components/Sections
 import MatrixRain from '../../components/MatrixRain';
 
 function Section1() {
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+      const easterEGG = () => {
+        setCount(count + 1);
+        if (count >= 5) {
+          let contentOcult = document.querySelector('.content-ocult');
+          contentOcult.classList.add('content-revel');
+        }
+      };
+
+      const spanElement = document.querySelector('h1');
+      if (spanElement) {
+        spanElement.addEventListener('click', easterEGG);
+      }
+
+      return () => {
+        if (spanElement) {
+          spanElement.removeEventListener('click', easterEGG);
+        }
+      };
+    }, [count]);
+
     return (
       <section id='sec1' className="Section">
         <div className='left-side-sec1'>
           <h1>
-            <span className='texts-sec1'>Olá!</span>
-            <span className='texts-sec1'>Sou o Felipe,</span>
-            <span className='texts-sec1'>Desenvolvedor FullStack.</span>
+            <span className='texts-sec1 text-h1'>Olá!</span>
+            <span className='texts-sec1 text-h1'>Sou o Felipe,</span>
+            <span className='texts-sec1 text-h1'>Desenvolvedor FullStack.</span>
           </h1>
+            <span className='content-ocult texts-sec1'>Porém mais front-end :P</span>
         </div>
         <div className='right-side-sec1'>
           <img src={imgFelipe} alt='Imagem do Felipe' />

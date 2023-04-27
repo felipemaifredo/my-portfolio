@@ -10,10 +10,26 @@
     width: 50%;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
     padding-right: 3vw;
 }
+
+.content-ocult {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    padding: 10px;
+    font-size: 2rem;
+    pointer-events: none;
+    transform: rotate(-3deg) scale(0);
+}
+
+.content-revel {
+    pointer-events: all;
+    transform: rotate(-3deg) scale(1);
+}
+
     #sec1 .left-side-sec1 h1 {
         color: var(--color-2);
         display: flex;
@@ -22,16 +38,16 @@
         justify-content: flex-start;
     }
 
-        #sec1 .left-side-sec1 .texts-sec1:nth-child(1) {
+        #sec1 .left-side-sec1 .text-h1:nth-child(1) {
             font-size: 20rem;
         }
 
-        #sec1 .left-side-sec1 .texts-sec1:nth-child(2) {
+        #sec1 .left-side-sec1 .text-h1:nth-child(2) {
             font-size: 6rem;
             margin-top: -60px;
         }
 
-        #sec1 .left-side-sec1 .texts-sec1:nth-child(3) {
+        #sec1 .left-side-sec1 .text-h1:nth-child(3) {
             font-size: 2.5rem;
         }
 
@@ -83,15 +99,15 @@
 }
 
 @media (max-width: 1200px) {
-    #sec1 .left-side-sec1 .texts-sec1:nth-child(1) {
+    #sec1 .left-side-sec1 .text-h1:nth-child(1) {
         font-size: 15rem;
     }
 
-    #sec1 .left-side-sec1 .texts-sec1:nth-child(2) {
+    #sec1 .left-side-sec1 .text-h1:nth-child(2) {
         font-size: 4.5rem;
         margin-top: -60px;
     }
-    #sec1 .left-side-sec1 .texts-sec1:nth-child(3) {
+    #sec1 .left-side-sec1 .text-h1:nth-child(3) {
         font-size: 2rem;
     }
 }
@@ -107,24 +123,29 @@
         min-width: none;
         height: 45%;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         padding-right: 0vw;
+        padding-bottom: 5px;
+    }
+
+    .content-ocult {
+        font-size: 1rem;
     }
         #sec1 .left-side-sec1 h1 {
             align-items: center;
             justify-content: center;
         }
     
-            #sec1 .left-side-sec1 .texts-sec1:nth-child(1) {
+            #sec1 .left-side-sec1 .text-h1:nth-child(1) {
                 font-size: 10rem;
             }
     
-            #sec1 .left-side-sec1 .texts-sec1:nth-child(2) {
+            #sec1 .left-side-sec1 .text-h1:nth-child(2) {
                 font-size: 2.5rem;
                 margin-top: -30px;
             }
     
-            #sec1 .left-side-sec1 .texts-sec1:nth-child(3) {
+            #sec1 .left-side-sec1 .text-h1:nth-child(3) {
                 font-size: 1rem;
             }
     

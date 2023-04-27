@@ -12,8 +12,9 @@ export const changeTextsHomeBR = () => {
       TextsSec1[0].innerText = 'Olá!';
       TextsSec1[1].innerText = 'Sou o Felipe,';
       TextsSec1[2].innerText = 'Desenvolvedor Web FullStack.';
-      TextsSec1[3].innerText = 'Portfolio e Trabalhos';
-      TextsSec1[4].innerText = 'de Felipe Maifredo';
+      TextsSec1[3].innerText = 'Porém mais Front-End :P';
+      TextsSec1[4].innerText = 'Portfolio e Trabalhos';
+      TextsSec1[5].innerText = 'de Felipe Maifredo';
     }
     
     let TextsAbout = document.querySelectorAll('.texts-about');
@@ -51,8 +52,9 @@ export const changeTextsHomeBR = () => {
       TextsSec1[0].innerText = 'Hi!';
       TextsSec1[1].innerText = "I'm Felipe,";
       TextsSec1[2].innerText = 'FullStack Web Developer.';
-      TextsSec1[3].innerText = 'Portfolio and Works';
-      TextsSec1[4].innerText = 'of Felipe Maifredo';
+      TextsSec1[3].innerText = 'But more Front-End :P';
+      TextsSec1[4].innerText = 'Portfolio and Works';
+      TextsSec1[5].innerText = 'of Felipe Maifredo';
     }
     
 
