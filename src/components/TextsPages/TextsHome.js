@@ -52,11 +52,11 @@ export const changeTextsHomeBR = () => {
       TextsProjects[10].innerText = 'Meus Trabalhos reais já feitos.';
       TextsProjects[11].innerText = 'Acesse';
     }
-
+/*
     let TextsContact = document.querySelectorAll('.texts-contact');
     if (TextsContact) {
       TextsContact[0].innerText = 'Olá Mundo!';
-    }
+    } */
   };
   
   export const changeTextsHomeUS = () => {
@@ -114,9 +114,9 @@ export const changeTextsHomeBR = () => {
       TextsProjects[10].innerText = 'My real works already done.';
       TextsProjects[11].innerText = 'Access';
     }
-  
+  /*
     let TextsContact = document.querySelectorAll('.texts-contact');
     if (TextsContact) {
       TextsContact[0].innerText = 'Hello World!';
-    }
+    }*/
   };
