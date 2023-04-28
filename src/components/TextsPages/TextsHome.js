@@ -24,9 +24,16 @@ export const changeTextsHomeBR = () => {
 
     let TextsSkills = document.querySelectorAll('.texts-skills');
     if (TextsSkills) {
-      TextsSkills[0].innerText = 'Olá Mundo!';
+      TextsSkills[0].innerText = 'HTML 5 e CSS 3';
+      TextsSkills[1].innerText = 'Acessibilidade';
+      TextsSkills[2].innerText = 'Responsividade';
+      TextsSkills[3].innerText = 'Semântica';
+      TextsSkills[8].innerText = 'Controle e Versionamento de Codigos';
+      TextsSkills[15].innerText = 'Linguagem Back-End';
+      TextsSkills[17].innerText = 'Bancos de Dados';
+      TextsSkills[21].innerText = 'Outras Tecnologias';
     }
-  
+ 
     let TextsProjects = document.querySelectorAll('.texts-projects');
     if (TextsProjects) {
       TextsProjects[0].innerText = 'Projetos';
@@ -79,9 +86,16 @@ export const changeTextsHomeBR = () => {
 
     let TextsSkills = document.querySelectorAll('.texts-skills');
     if (TextsSkills) {
-      TextsSkills[0].innerText = 'Hello World!';
-    }
-    
+      TextsSkills[0].innerText = 'HTML 5 and CSS 3';
+      TextsSkills[1].innerText = 'Accessibility';
+      TextsSkills[2].innerText = 'Responsivity';
+      TextsSkills[3].innerText = 'Semantics';
+      TextsSkills[8].innerText = 'Control and Versioning of Codes';
+      TextsSkills[15].innerText = 'Back End Language';
+      TextsSkills[17].innerText = 'Databases';
+      TextsSkills[21].innerText = 'Other Tecnologies';
+    }  
+
     let TextsProjects = document.querySelectorAll('.texts-projects');
     if (TextsProjects) {
       TextsProjects[0].innerText = 'Projects';

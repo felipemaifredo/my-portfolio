@@ -33,7 +33,6 @@
 #Projects .box-sec-projects .item-sec-projects::after {
     content: '';
     position: absolute;
-    height: 50%;
     right: 0;
     height: 90%;
     width: 2px;
@@ -100,4 +99,75 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+}
+
+@media (max-width: 750px) {
+    #Projects {
+    }
+    
+    #Projects .box-sec-projects {
+        height: 90%;
+        width: 90%;       
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #Projects .box-sec-projects .item-sec-projects {
+        height: 100%;
+        width: 90%;
+        flex-direction: row;
+    }
+    
+    #Projects .box-sec-projects .item-sec-projects::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+        height: 2px;
+        width: 90%;
+        background-color: var(--color-2);
+    }
+    
+    #Projects .box-sec-projects .item-sec-projects:last-child::after {
+        transform: scale(0);
+    }
+    
+    #Projects .box-sec-projects .item-sec-projects .img-box-item {
+        width: 30%;
+        height: fit-content;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    #Projects .box-sec-projects .item-sec-projects .img-box-item svg {
+        height: 50px;
+        width: 50px;
+        color: var(--color-2);
+    }
+    
+    #Projects .box-sec-projects .item-sec-projects .texts-box-item {
+        height: 90%;
+        gap: 10px;
+    }
+    
+    #Projects .box-sec-projects .item-sec-projects .texts-box-item h3 {
+        font-size: 1.8rem;
+        
+    }
+    
+    #Projects .box-sec-projects .item-sec-projects .texts-box-item p {
+        font-size: 1rem;
+        padding: 0px;
+    }
+    
+    #Projects .box-sec-projects .item-sec-projects .btn-box-item {
+        height: 90%;
+        align-items: center;
+    }
+    
+    
+    #Projects .box-sec-projects .item-sec-projects a {
+    }
 }

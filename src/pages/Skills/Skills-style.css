@@ -6,9 +6,120 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-1);
+    background-color: var(--color-10);
 }
 
-h1 {
+#Skills .box-sec-skills {
+    height: 85%;
+    width: 80%;
+    background-color: var(--color-1);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+    #Skills .box-sec-skills::after {
+        position: absolute;
+        content: '';
+        background-color: var(--color-10);
+        width: 90%;
+        height: 3px;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+    }
+
+#Skills .top-box-sec-skills, #Skills .botton-box-sec-skills {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Skills .top-box-sec-skills {
+
+}
+
+
+
+#Skills .bottom-box-sec-skills {
+    
+}
+
+#Skills .box-sec-skills .card-sec-skills {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+}
+
+#Skills .box-sec-skills .card-sec-skills::after {
+    position: absolute;
+    content: '';
+    background-color: var(--color-10);
+    height: 80%;
+    width: 3px;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+}
+
+#Skills .box-sec-skills .top-box-sec-skills .card-sec-skills:last-child:after, #Skills .box-sec-skills .botton-box-sec-skills .card-sec-skills:last-child:after {
+    content: none;
+}
+
+#Skills .box-sec-skills .card-sec-skills .texts-box-sec-skills {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+#Skills .box-sec-skills .card-sec-skills h3 {
+    color: var(--color-2);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#Skills .box-sec-skills .card-sec-skills p {
+    color: var(--color-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+#Skills .box-sec-skills .card-sec-skills p span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#Skills .box-sec-skills .card-sec-skills .img-box-sec-skills {
+    height: 40%;
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: var(--color-2);
+}
+
+
+#Skills .box-sec-skills .card-sec-skills .img-box-sec-skills svg{
+    height: 90%;
+    width: 50%;
     color: var(--color-2);
 }
