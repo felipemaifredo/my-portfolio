@@ -9,6 +9,7 @@ import Navbar from './components/navbar/Navbar';
 //Rotas
 import Home from './routes/home/Home';
 import Projects from './routes/Projects/Projects';
+import Library from './routes/Library/Library.js';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
             <Route path='/projects' element={<Projects />}/>
             <Route path='/works' element={<Home />}/>
             <Route path='/gallery' element={<Home />}/>
-            <Route path='/library' element={<Home />}/>
+            <Route path='/library' element={<Library />}/>
           </Routes>
       </HashRouter>
     </div>

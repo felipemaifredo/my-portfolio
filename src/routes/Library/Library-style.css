@@ -1,0 +1,309 @@
+@import url('../../variaveis.css');
+
+#Library {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadings-section {
+    height: 100vh;
+    max-height: 450px;
+    width: 100vw;
+    background-color: var(--color-10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    
+}
+
+.loadings-section::-webkit-scrollbar {
+    
+}
+
+.card {
+    height: 350px;
+    width: 250px;
+    min-width: 250px;
+    background-color: var(--color-8);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-box-animation {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-box-title {
+    height: 10%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-box-title h3 {
+    color: var(--color-2);
+}
+
+.card-box-btns {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Navigation-btn-left, .Navigation-btn-right {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 8;
+    background-color: var(--color-1);
+    border: none;
+    cursor: pointer;
+    opacity: .3;
+}
+
+.Navigation-btn-left svg, .Navigation-btn-right svg {
+    color: var(--color-2);
+    height: 20px;
+    width: 20px;
+}
+
+.Navigation-btn-left:hover, .Navigation-btn-right:hover {
+    opacity: .8;
+}
+
+.Navigation-btn-left:hover svg, .Navigation-btn-right:hover svg {
+    transition: all .2s;
+}
+
+.Navigation-btn-left {
+    left: -10px;
+}
+
+.Navigation-btn-right {
+    right: -10px;
+}
+
+
+.Navigation-btn-right svg {
+    transform: rotate(180deg);
+}
+
+.btn-icon-navigation {
+    height: 100px;
+    width: 100px;
+}
+
+.Navigation-btn-right .btn-icon-navigation {
+    transform: rotate(180deg);
+}
+
+.card-box-btns {
+}
+
+.card-box-btns button {
+    border: none;
+    background-color: var(--color-1);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.card-box-btns button:hover {
+    transform: scale(1.2);
+    transition: all .2s;
+}
+
+.card-box-btns button svg {
+    height: 60%;
+    width: 60%;
+    color: var(--color-2);
+}
+
+/*--------------------------------------*/
+.loading-1 {
+    display: block;
+    height: 100px;
+    width: 100px;
+    animation: loading1 2s ease-out infinite alternate;
+}
+@keyframes loading1 {
+    0% {
+        transform: scale(.5);
+        background-color: blue;
+        border-radius: 50%;
+    }
+
+    25% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: orange;
+    }
+
+    75% {
+        background-color: red;
+    }
+
+    100% {
+        transform: scale(1.1);
+        background-color: purple;
+        border-radius: 0;
+    }
+}
+
+/*--------------------------------------*/
+
+.loading-2 {
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 15px solid blue;
+    animation: loading2 2.5s ease-in-out infinite;
+    filter: blur(.5px);
+}
+
+@keyframes loading2 {
+    0% {
+        transform: scale(1);
+        border-color: blue;
+    }
+
+    25% {
+        transform: scale(.8);
+        border-color: green;
+    }
+
+    50% {
+        transform: scale(1.15);
+        border-color: purple;
+    }
+
+    75% {
+        transform: scale(.7);
+        border-color: yellow;
+    }
+
+    100% {
+        transform: scale(1);
+        border-color: blue;
+    }
+}
+
+/*------------------------------*/
+
+.loading-3 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 20px solid white;
+    border-top-color: blue;
+    animation: animate3 1.5s ease-in-out infinite;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+/*------------------------------------------*/
+
+.loading-4 {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9 , #ffeb3b, #ff00e0);
+    animation: animate5 1s linear infinite;
+    background-color: white;
+
+}
+
+.loading-4 span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9 , #ffeb3b, #ff00e0);
+    animation: animate5  1s linear infinite;
+}
+
+.loading-4 span:nth-child(1) {
+    filter: blur(5px);
+}
+
+.elemento5 span:nth-child(2) {
+    filter: blur(10px);
+}
+
+.loading-4 span:nth-child(3) {
+    filter: blur(25px);
+}
+
+.loading-4 span:nth-child(4) {
+    filter: blur(50px);
+}
+
+.loading-4::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+@keyframes animate5 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+/*------------------------*/

@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid var(--color-2);
 }
 
 #Projects .box-sec-projects .item-sec-projects {
@@ -79,6 +80,7 @@
     color: var(--color-2);
     font-size: 1rem;
     padding: 0px 15px;
+    font-weight: bold;
 }
 
 #Projects .box-sec-projects .item-sec-projects .btn-box-item {
