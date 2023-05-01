@@ -46,7 +46,7 @@ const Navbar = () => {
             isHome ? (
               <a href={link} className="navigation-link texts-nav" onClick={verifyMenu}> {text} </a>
             ) : (
-              <Link to="/#Contact" className='texts-nav'> {text} </Link>
+              <Link to="/" className='texts-nav'> {text} </Link>
             )
         )
     };

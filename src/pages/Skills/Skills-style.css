@@ -2,6 +2,7 @@
 
 #Skills {
     height: 100vh;
+    min-height: 650px;
     width: 100vw;
     display: flex;
     align-items: center;
