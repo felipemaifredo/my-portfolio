@@ -6,12 +6,12 @@ export const changeTextsLibraryBR = () => {
       TextsMenu[3].innerText = 'Projetos';
       TextsMenu[4].innerText = 'Contato';
     };
-
+/*
     let TextsLibrary = document.querySelectorAll('.texts-library');
     if (TextsLibrary) {
       TextsLibrary[0].innerText = 'Página de Biblioteca';
     }
-    
+    */
   };
   
   export const changeTextsLibraryUS = () => {
@@ -22,9 +22,9 @@ export const changeTextsLibraryBR = () => {
       TextsMenu[3].innerText = 'Projects';
       TextsMenu[4].innerText = 'Contact';  
     }
-
+/*
     let TextsLibrary = document.querySelectorAll('.texts-library');
     if (TextsLibrary) {
         TextsLibrary[0].innerText = 'Library Pages';
-    }
+    }*/
   };

@@ -41,9 +41,9 @@ function ChangeIdiom() {
       case '/projects':
           changeTextsProjectsBR();
         break;
-      /*case '/library':
+      case '/library':
           changeTextsLibraryBR();
-        break;*/
+        break;
     
       default:
         break;
@@ -58,9 +58,9 @@ function ChangeIdiom() {
       case '/projects':
           changeTextsProjectsUS();
         break;
-      /*case '/library':
+      case '/library':
           changeTextsLibraryUS();
-          break;*/
+        break;
     
       default:
         break;

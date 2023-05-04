@@ -3,6 +3,10 @@
 //Imports
 import './Contact-style.css';
 import React, { useState } from 'react';
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
+
+
 
 //Components/Sections
 const btnSending = 'Enviando <span class="elemento"></span>';
@@ -62,7 +66,9 @@ function Contact() {
             <textarea name="message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} placeholder='Assunto' className='texts-contact'></textarea>
             <button type="submit" id='btn-form' className='texts-contact'> Enviar </button>
           </form>
-          <div className='social-box-sec-contact'>
+          <div className='social-box-sec-contact'> 
+            <a href='https://github.com/felipemaifredo' target='_blank' rel="noreferrer"> <AiFillGithub /> </a>
+            <a href='https://www.linkedin.com/in/felipe-maifredo-aa8228198/' target='_blank' rel="noreferrer"> <AiFillLinkedin /> </a>
           </div>
         </div>
       </section>

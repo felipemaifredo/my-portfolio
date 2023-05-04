@@ -55,8 +55,13 @@ export const changeTextsHomeBR = () => {
 
     let TextsContact = document.querySelectorAll('.texts-contact');
     if (TextsContact) {
-      TextsContact[0].innerText = 'Olá Mundo!';
-      TextsContact[0].innerText = 'Olá Mundo!';
+      TextsContact[0].innerText = 'Obrigado por chegar até aqui!';
+      TextsContact[1].innerText = 'Me envie uma mensagem abaixo';
+      TextsContact[2].placeholder = 'Nome';
+      TextsContact[3].placeholder = 'Email ou Whatsapp';
+      TextsContact[4].placeholder = 'Assunto';
+      TextsContact[5].innerText = 'Enviar';
+
     }
   };
   
@@ -118,6 +123,11 @@ export const changeTextsHomeBR = () => {
   
     let TextsContact = document.querySelectorAll('.texts-contact');
     if (TextsContact) {
-      TextsContact[0].innerText = 'Hello World!';
+      TextsContact[0].innerText = 'Thanks for getting this far!';
+      TextsContact[1].innerText = 'send me a message below';
+      TextsContact[2].placeholder = 'Name';
+      TextsContact[3].placeholder = 'Email or Whatsapp';
+      TextsContact[4].placeholder = 'Subject';
+      TextsContact[5].innerText = 'Send';
     }
   };
