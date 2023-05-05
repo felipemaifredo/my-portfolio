@@ -9,6 +9,7 @@ import USIcon from '../assets/icons/eua-icon.png';
 import { changeTextsHomeBR, changeTextsHomeUS } from './TextsPages/TextsHome';
 import { changeTextsProjectsBR, changeTextsProjectsUS } from './TextsPages/TextsProjects';
 import { changeTextsLibraryBR, changeTextsLibraryUS } from './TextsPages/TextsLibrary';
+import { changeTextsWorksBR, changeTextsWorksUS } from './TextsPages/TextsWorks';
 
 function ChangeIdiom() {
   const location = useLocation().pathname;
@@ -44,6 +45,9 @@ function ChangeIdiom() {
       case '/library':
           changeTextsLibraryBR();
         break;
+      case '/works':
+          changeTextsWorksBR();
+        break;
     
       default:
         break;
@@ -60,6 +64,9 @@ function ChangeIdiom() {
         break;
       case '/library':
           changeTextsLibraryUS();
+        break;
+      case '/works':
+          changeTextsWorksUS();
         break;
     
       default:

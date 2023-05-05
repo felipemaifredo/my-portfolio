@@ -4,6 +4,10 @@ import './Projects-style.css'
 import { BsCodeSlash } from "react-icons/bs";
 import { AiOutlineEye } from "react-icons/ai";
 import Calculadora from '../../assets/projects/calculadora.png'
+import clock from '../../assets/projects/clock.png'
+import To_do from '../../assets/projects/to_do.png'
+import PassChecker from '../../assets/projects/pass_checekr.png'
+import Passgene from '../../assets/projects/pass_gene.png'
 
 function Projects() {
 
@@ -30,13 +34,44 @@ function Projects() {
       <div className="Projects">
 
         {renderCard(
+          Passgene,
+          'Gerador de Senhas',
+          'Um dos Meus Primeiros Projetos com Javascript, criando gerador de senha.',
+          'https://github.com/felipemaifredo/password_generator',
+          'https://felipemaifredo.github.io/password_generator/'
+        )}
+
+        {renderCard(
+          PassChecker,
+          'Analisador de Senha',
+          'Um dos Meus Primeiros Projetos com Javascript, criando Analisador de senha.',
+          'https://github.com/felipemaifredo/password_Checker',
+          'https://felipemaifredo.github.io/password_Checker/'
+        )}
+
+        {renderCard(
+          To_do,
+          'Lista de Tarefas',
+          'Um dos Meus Primeiros Projetos com Javascript, criando uma lista de tarefas.',
+          'https://github.com/felipemaifredo/to_do_list',
+          'https://felipemaifredo.github.io/to_do_list/'
+        )}
+
+        {renderCard(
           Calculadora,
           'Calculadora',
           'Um dos Meus Primeiros Projetos com Javascript, criando uma calculadora.',
           'https://github.com/felipemaifredo/calculadora',
           'https://felipemaifredo.github.io/calculadora/'
-         )}
+        )}
 
+        {renderCard(
+          clock,
+          'Relógio',
+          'Um dos Meus Primeiros Projetos com Javascript, criando um relógio.',
+          'https://github.com/felipemaifredo/clock',
+          'https://felipemaifredo.github.io/clock/'
+        )}
       </div>
     );
 }

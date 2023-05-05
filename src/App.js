@@ -10,6 +10,7 @@ import Navbar from './components/navbar/Navbar';
 import Home from './routes/home/Home';
 import Projects from './routes/Projects/Projects';
 import Library from './routes/Library/Library.js';
+import Works from './routes/Works/Works.js';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/projects' element={<Projects />}/>
-            <Route path='/works' element={<Home />}/>
+            <Route path='/works' element={<Works />}/>
             <Route path='/gallery' element={<Home />}/>
             <Route path='/library' element={<Library />}/>
           </Routes>
