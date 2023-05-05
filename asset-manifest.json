@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.64df8075.css",
-    "main.js": "/my-portfolio/static/js/main.f55666ff.js",
+    "main.css": "/my-portfolio/static/css/main.8c737bba.css",
+    "main.js": "/my-portfolio/static/js/main.54db8e7c.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/brusun.png": "/my-portfolio/static/media/brusun.b28e170a486aa7eedb02.png",
+    "static/media/clock.png": "/my-portfolio/static/media/clock.0ce30a4417bb1d7ee4b0.png",
     "static/media/calculadora.png": "/my-portfolio/static/media/calculadora.56a8220ab6f22d9e5b25.png",
+    "static/media/loboadv.png": "/my-portfolio/static/media/loboadv.e9e767f8e67d6efcac32.png",
     "static/media/felipe1.JPG": "/my-portfolio/static/media/felipe1.f4918e1a63943397cac1.JPG",
+    "static/media/pass_gene.png": "/my-portfolio/static/media/pass_gene.8011e66486abcd28edba.png",
+    "static/media/pass_checekr.png": "/my-portfolio/static/media/pass_checekr.e7e65c1577489230afb1.png",
+    "static/media/to_do.png": "/my-portfolio/static/media/to_do.83f45c78e59c3ce2361d.png",
     "index.html": "/my-portfolio/index.html",
     "static/media/sun.svg": "/my-portfolio/static/media/sun.836fb3cf9bd73f28ff59.svg",
     "static/media/moon.svg": "/my-portfolio/static/media/moon.96739afedd751452cc5b.svg",
-    "main.64df8075.css.map": "/my-portfolio/static/css/main.64df8075.css.map",
-    "main.f55666ff.js.map": "/my-portfolio/static/js/main.f55666ff.js.map",
+    "main.8c737bba.css.map": "/my-portfolio/static/css/main.8c737bba.css.map",
+    "main.54db8e7c.js.map": "/my-portfolio/static/js/main.54db8e7c.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64df8075.css",
-    "static/js/main.f55666ff.js"
+    "static/css/main.8c737bba.css",
+    "static/js/main.54db8e7c.js"
   ]
 }
