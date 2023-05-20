@@ -5,9 +5,21 @@ import './Section1-style.css';
 import { useState, useEffect } from 'react';
 //Components/Sections
 import MatrixRain from '../../components/MatrixRain';
-
+import MouseAnimation1 from '../../components/Backgroundanimation1/Backgroundanimation1';
+import BackAnimation2 from '../../components/BackgroundAnimation2/Backgroundanimation2';
 function Section1() {
     const [count, setCount] = useState(0);
+    const Backgrounds = [ <MatrixRain />, <MouseAnimation1 />, <BackAnimation2 /> ]
+
+    function getBackground() {
+      let RandonNumber = Math.floor(Math.random() * Backgrounds.length);
+      return RandonNumber;
+    }
+
+    const RenderBackground = () => {
+      let RandonNumber = getBackground();
+      return Backgrounds[RandonNumber];
+    }
 
     useEffect(() => {
       const easterEGG = () => {
@@ -46,7 +58,7 @@ function Section1() {
             <span className='texts-sec1'> Portfolio e Trabalhos </span>
             <span className='texts-sec1'> de Felipe Maifredo </span>
           </h2>
-          <MatrixRain />
+          {RenderBackground()}
         </div>
       </section>
     );
