@@ -3,7 +3,7 @@ import './Backgroundanimation1-style.css';
 
 const Backgroundanimation1 = () => {
 
-    return <div className='container'>
+    return <div className='.container-background'>
             <span></span>
             <span></span>
             <span></span>

@@ -8,6 +8,7 @@ import clock from '../../assets/projects/clock.png'
 import To_do from '../../assets/projects/to_do.png'
 import PassChecker from '../../assets/projects/pass_checekr.png'
 import Passgene from '../../assets/projects/pass_gene.png'
+import Pokedex from '../../assets/projects/pokedex.png';
 
 function Projects() {
 
@@ -15,7 +16,7 @@ function Projects() {
       return (
       <div className='card-item'>
           <div className='img-box'>
-            <img src={imagem} alt='Imagem de Projeto' />
+            <img src={imagem} alt= 'Imagem de Projeto' />
           </div>
           <div className='title-box'>
             <h2 className='texts-projects'>{tittle}</h2>
@@ -34,6 +35,22 @@ function Projects() {
       <div className="Projects">
 
         {renderCard(
+          Pokedex,
+          'Pokedex',
+          'Um dos Meus Primeiros Projetos utilizando APIs com Javascript/React.',
+          'https://github.com/felipemaifredo/pokedex-app',
+          'https://felipemaifredo.github.io/pokedex-app/'
+        )}
+
+        {renderCard(
+          To_do,
+          'Lista de Tarefas',
+          'Um dos Meus Primeiros Projetos com Javascript, criando uma lista de tarefas.',
+          'https://github.com/felipemaifredo/to_do_list',
+          'https://felipemaifredo.github.io/to_do_list/'
+        )}
+
+        {renderCard(
           Passgene,
           'Gerador de Senhas',
           'Um dos Meus Primeiros Projetos com Javascript, criando gerador de senha.',
@@ -47,14 +64,6 @@ function Projects() {
           'Um dos Meus Primeiros Projetos com Javascript, criando Analisador de senha.',
           'https://github.com/felipemaifredo/password_Checker',
           'https://felipemaifredo.github.io/password_Checker/'
-        )}
-
-        {renderCard(
-          To_do,
-          'Lista de Tarefas',
-          'Um dos Meus Primeiros Projetos com Javascript, criando uma lista de tarefas.',
-          'https://github.com/felipemaifredo/to_do_list',
-          'https://felipemaifredo.github.io/to_do_list/'
         )}
 
         {renderCard(
