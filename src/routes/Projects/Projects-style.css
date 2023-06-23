@@ -41,7 +41,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
     .Projects .card-item .title-box h2 {
@@ -69,7 +68,6 @@
     justify-content: center;
     gap: 10px;
     background-color: var(--color-10);
-
 }
     .Projects .card-item .btn-box a {
         height: 100%;

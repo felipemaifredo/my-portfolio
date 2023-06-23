@@ -2,14 +2,11 @@
 import imgFelipe from '../../assets/imgs/felipe1.JPG';
 //Imports
 import './Section1-style.css';
-import { useState, useEffect } from 'react';
 //Components/Sections
 import MatrixRain from '../../components/MatrixRain';
-import MouseAnimation1 from '../../components/Backgroundanimation1/Backgroundanimation1';
-import BackAnimation2 from '../../components/BackgroundAnimation2/Backgroundanimation2';
+
 function Section1() {
-    const [count, setCount] = useState(0);
-    const Backgrounds = [ <MatrixRain />, <MouseAnimation1 />, <BackAnimation2 /> ]
+    const Backgrounds = [ <MatrixRain /> ]
 
     function getBackground() {
       let RandonNumber = Math.floor(Math.random() * Backgrounds.length);
@@ -20,28 +17,7 @@ function Section1() {
       let RandonNumber = getBackground();
       return Backgrounds[RandonNumber];
     }
-
-    useEffect(() => {
-      const easterEGG = () => {
-        setCount(count + 1);
-        if (count >= 5) {
-          let contentOcult = document.querySelector('.content-ocult');
-          contentOcult.classList.add('content-revel');
-        }
-      };
-
-      const spanElement = document.querySelector('h1');
-      if (spanElement) {
-        spanElement.addEventListener('click', easterEGG);
-      }
-
-      return () => {
-        if (spanElement) {
-          spanElement.removeEventListener('click', easterEGG);
-        }
-      };
-    }, [count]);
-
+    
     return (
       <section id='sec1' className="Section">
         <div className='left-side-sec1'>
