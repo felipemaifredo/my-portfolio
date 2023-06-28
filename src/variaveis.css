@@ -9,7 +9,7 @@ body[data-theme="t-light"] {
     --color-7: #3b8c88;
     --color-8: #e0e0e0;
     --color-9: #181818;
-    --color-10: #dbdbdb5e;
+    --color-10: #dbdbdb;
 }
 body[data-theme="t-dark"] {
     --color-1: #000000;

@@ -15,13 +15,24 @@ import { GrMysql } from "react-icons/gr";
 import { SiFirebase } from "react-icons/si";
 import { SiSass } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
 
 //Imports
 import './Skills-style.css';
+import { useEffect } from "react";
 
 //Components/Sections
 
 function Skills() {
+
+    useEffect(() => {
+      const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+        });
+      };
+      scrollToTop();
+    });
 
     const RenderItemSkill = (image, tittle) => {
       return (
@@ -60,6 +71,7 @@ function Skills() {
               <h3 className="texts-skills">Outras Tecnologias</h3>
               {RenderItemSkill(<SiSass />, 'SASS')}
               {RenderItemSkill(<SiTailwindcss />, 'Tailwind')}
+              {RenderItemSkill(<FaDocker />, 'Docker')}
             </div>
           </div>
         </div>

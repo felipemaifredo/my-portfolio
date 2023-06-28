@@ -1,7 +1,7 @@
 //Assets
 
 //Imports
-
+import { useEffect } from 'react';
 //Components/Sections
 import ScrollTo from '../../components/ScrollTo';
 import Section1 from '../../pages/Section1/Section1';
@@ -11,6 +11,16 @@ import Projects from '../../pages/Projects/Projects';
 import Contact from '../../pages/Contact/Contact';
 
 function Home() {
+
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+      });
+    };
+    scrollToTop();
+  });
+
     return (
       <div className="Home">
         <Section1 />

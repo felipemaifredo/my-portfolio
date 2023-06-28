@@ -19,6 +19,13 @@ const Navbar = () => {
         setAria()
     };
 
+    const pageTransition = () => {
+        document.querySelector('body').classList.add('page-transition')
+        setTimeout(() => {
+            document.querySelector('body').classList.remove('page-transition')
+        }, 1001)
+   }
+
     const setAria = () => {
         let btnMenu = document.querySelector('.btn-menu');
         let Nav = document.querySelector('nav');
@@ -36,6 +43,7 @@ const Navbar = () => {
         let btnMenu = document.querySelector('.btn-menu');
         let btnMenuStyles = getComputedStyle(btnMenu);
         let isFlex = btnMenuStyles.display === 'flex';
+
         if (isFlex) {
             toggleMenu();
         };
@@ -46,7 +54,7 @@ const Navbar = () => {
             isHome ? (
               <a href={link} className="navigation-link texts-nav" onClick={verifyMenu}> {text} </a>
             ) : (
-              <Link to="/" className='texts-nav'> {text} </Link>
+              <Link to="/" className='texts-nav' onClick={pageTransition}> {text} </Link>
             )
         )
     };
