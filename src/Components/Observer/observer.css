@@ -1,0 +1,11 @@
+.init-hidden {
+  transform: scale(50%);
+  transition: transform 1s;
+  opacity: 0;
+}
+
+.init-hidden-off {
+  opacity: 1;
+  transform: scale(100%);
+  transition: transform .8s
+}

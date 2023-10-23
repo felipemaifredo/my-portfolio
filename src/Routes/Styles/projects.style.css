@@ -1,0 +1,95 @@
+@import url('../../variables.css');
+
+#projects-page {
+    height: fit-content;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
+
+#projects-page .card-item {
+    height: 450px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    background-color: var(--color-4);
+
+    transition: all 1s;
+    &:hover {
+        transition: all .3s;
+        transform: scale(1.05);
+    }
+}
+
+#projects-page .card-item .img-box {
+    height: 40%;
+    width: 100%;
+}
+
+    #projects-page .card-item .img-box img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+#projects-page .card-item .title-box {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #projects-page .card-item .title-box h2 {
+        text-align: center;
+    }
+
+#projects-page .card-item .text-box {
+    height: 35%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #projects-page .card-item .text-box p {
+        text-align: center;
+    }
+
+#projects-page .card-item .btn-box {
+    height: 15%;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--color-3);
+}
+    #projects-page .card-item .btn-box a {
+        height: 100%;
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    #projects-page .card-item .btn-box a:hover {
+        transform: scale(1.2);
+    }
+
+        #projects-page .card-item .btn-box a svg {
+            height: 60%;
+            width: 60%;
+            color: var(--color-1);
+        }

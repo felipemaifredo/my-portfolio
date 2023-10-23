@@ -1,0 +1,28 @@
+.box-languages {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-languages button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+    .box-languages .language-active {
+        cursor: default;
+        pointer-events: none;
+    }
+
+    .box-languages .language-active img{
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+
+.box-languages button img {
+    height: 30px;
+    filter: grayscale(1);
+    transform: scale(.8);
+}

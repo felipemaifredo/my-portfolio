@@ -1,0 +1,94 @@
+@import url('../../variables.css');
+
+#projects {
+    height: 100vh;
+    min-height: 1000px;
+    width: 100vw;
+    background-color: var(--color-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+#projects .column-item {
+    height: 70%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+#projects .isfliped {
+    flex-direction: column-reverse;
+}
+
+#projects .column-item .title-box-item {
+    background-color: var(--color-3);;
+    height: 60%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+#projects .column-item .title-box-item > svg {
+    height: 40%;
+    width: 100%;
+    color: var(--color-1);;
+}
+
+#projects .column-item .title-box-item > h3 {
+    height: 10%;
+    width: 90%;
+    text-align: left;
+    color: var(--color-1);;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+#projects .column-item .title-box-item a {
+    color: var(--color-1);;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 50%;
+    border: 3px solid var(--color-1);;
+    transition: all 1s;
+
+    &:hover {
+        transition: all .3s;
+        background-color: var(--color-1);;
+        color: var(--color-3);
+    }
+}
+
+#projects .column-item .title-box-item a svg {
+    height: 100%;
+    width: fit-content;
+    
+    border-radius: 50%;
+}
+
+#projects .column-item .info-box-item {
+    background-color: var(--color-4);
+    height: 30%;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+}
+
+#projects .column-item .info-box-item p {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5px;
+    color: var(--color-3);;
+}

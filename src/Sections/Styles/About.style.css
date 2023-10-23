@@ -1,0 +1,25 @@
+@import url('../../variables.css');
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-1);
+}
+
+#about h2 {
+    width: 80%;
+    font-size: 7rem;
+    color: var(--color-3);
+}
+
+#about p {
+    width: 80%;
+    font-size: 1.3rem;
+    color: var(--color-3);
+    text-align: left;
+}

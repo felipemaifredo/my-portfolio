@@ -1,0 +1,83 @@
+@import url('../../variables.css');
+
+#navconfig {
+    position: fixed;
+    right: 5%;
+    top: 10px;
+    height: 45px;
+    width: 70px;
+    border-radius: 50px;
+    background-color: var(--color-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+    z-index: 10;
+}
+
+
+
+#navconfig .menu-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    position: absolute;
+    transform: translate(-100%);
+    background-color: var(--color-4);
+    border-radius: 50px 0 0 50px;
+    padding: 10px;
+    
+    width: 0px;
+    left: 15px;
+    z-index: -9;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+#navconfig.configon .menu-flex {
+    left: 1px;
+    z-index: 9;
+    opacity: 1;
+    pointer-events: all;
+    width: 200px;
+}
+
+#navconfig.configon {
+    border-radius:  0 50px 50px 0;
+}
+
+#navconfig .box-btn {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-4);
+    z-index: 10;
+    border-radius: 50px;
+}
+
+#navconfig .navconfig-button {
+    height: 80%;
+    min-width: 50px;
+    background-color: transparent;
+    border: none;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+}
+
+#navconfig .navconfig-button svg {
+    height: 80%;
+    width: 100%;
+    color: var(--color-3);
+    transition: all .3s;
+}
+
+#navconfig.configon .navconfig-button svg {
+    transform: rotate(359deg);
+}
