@@ -34,6 +34,15 @@
     justify-content: space-around;
     gap: 20px;
     padding: 20px;
+    box-shadow: 10px 8px 44px -9px rgb(0, 0, 0);
+    -webkit-box-shadow: 10px 8px 44px -9px rgb(0, 0, 0);
+    -moz-box-shadow: 10px 8px 44px -9px rgb(0, 0, 0);
+    transition: all 1s;
+
+    &:hover {
+        transition: all .2s;
+        transform: scale(1.02);
+    }
 }
 
 #projects .column-item .title-box-item > svg {
@@ -84,6 +93,15 @@
     display: grid;
     place-items: center;
     border-radius: 20px;
+    box-shadow: 10px 8px 44px -9px rgb(0, 0, 0);
+    -webkit-box-shadow: 10px 8px 44px -9px rgb(0, 0, 0);
+    -moz-box-shadow: 10px 8px 44px -9px rgb(0, 0, 0);
+    transition: all 1s;
+
+    &:hover {
+        transition: all .2s;
+        transform: scale(1.02);
+    }
 }
 
 #projects .column-item .info-box-item p {

@@ -1,0 +1,201 @@
+@import url('../../variables.css');
+
+/* Animations */
+
+@keyframes animation-enter-cardexp {
+    from {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    50% {
+        left: 50%;
+    }
+    
+    60% {
+        left: 50%;
+        height: 30px;
+    }
+
+    70% {
+        height: 100px;
+    }
+
+    80% {
+        height: 100px;
+        width: 30px;
+    }
+
+    to {
+        opacity: 1;
+        pointer-events: all;
+        left: 50%;
+        width: 90%;
+        height: 100px;
+    }
+}
+
+@keyframes animation-goout-cardexp {
+    from {
+        opacity: 1;
+        pointer-events: all;
+        left: 50%;
+        width: var(--width-progress);
+        height: var(--height-progress);
+    }
+
+    50% {
+        width: 30px;
+    }
+    
+    60% {
+        height: var(--height-progress);
+    }
+
+    70% {
+        left: 50%;
+        height: 30px;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+/* Animations */
+
+#skills {
+    height: auto;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--color-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    gap: 50px;
+    position: relative;
+}
+
+#skills .title-box-skills {
+    width: 90%;
+}
+
+#skills .title-box-skills h2 {
+    color: var(--color-1);
+    font-size: 3rem;
+    text-align: left;
+}
+
+#skills .title-box-skills p {
+    color: var(--color-1);
+    font-size: 1.5rem;
+    margin-top: -10px;
+    text-align: left;
+}
+
+#skills .logos-box {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#skills .logos-box .card-skill {
+    height: 170px;
+    width: 170px;
+    background-color: var(--color-1);
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+#skills .logos-box .card-skill img {
+    width: 60%;
+}
+
+#elementEXP {
+    position: absolute;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    bottom: 5%;
+    background-color: var(--color-1);
+    overflow: hidden;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    max-height: 100px;
+    overflow-y: hidden;
+    padding: 0;
+
+    height: 30px;
+    width: 30px;
+    left: 0%;
+    transform: translate(-50%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+    #elementEXP.elementEXP-active {
+        animation: animation-enter-cardexp 1s forwards;
+    }
+
+    #elementEXP.elementEXP-desactive {
+        animation: animation-goout-cardexp .7s;
+    }
+
+#elementEXP img {
+   width: 60px;
+}
+
+#elementEXP  .text-box-exp {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+#elementEXP .text-box-exp h3 {
+   color: var(--color-3);
+   width: 100%;
+   text-align: left;
+}
+
+#elementEXP .text-box-exp p {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--color-3);
+    font-weight: 400;
+    text-align: left;
+}
+
+#elementEXP .skill-exp {
+    width: 100px;
+}
+
+#elementEXP .skill-exp > div {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    &::after {
+        content: attr(data-count);
+        position: absolute;
+        color: transparent;
+        font-weight: 600;
+        font-size: 1.5rem;
+        animation: animation-progress .5s .8s forwards;
+    }
+}

@@ -6,6 +6,7 @@ import './Styles/home.style.css'
 import Presentation from "../Sections/Presentation";
 import About from '../Sections/About';
 import Projects from "../Sections/Projects";
+import Skills from '../Sections/Skills';
 
 const Home = () => {
     useEffect(() => {
@@ -21,6 +22,7 @@ const Home = () => {
         <div id="home">
             <Presentation />
             <About />
+            <Skills />
             <Projects />
         </div>
     )
