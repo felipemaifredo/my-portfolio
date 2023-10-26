@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.17325147.css",
+    "main.js": "/my-portfolio/static/js/main.923fdb03.js",
+    "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/brusun.png": "/my-portfolio/static/media/brusun.b28e170a486aa7eedb02.png",
+    "static/media/totalseg.png": "/my-portfolio/static/media/totalseg.d12cc7e24f12a1be8f40.png",
+    "static/media/clock.png": "/my-portfolio/static/media/clock.0ce30a4417bb1d7ee4b0.png",
+    "static/media/calculadora.png": "/my-portfolio/static/media/calculadora.56a8220ab6f22d9e5b25.png",
+    "static/media/loboadv.png": "/my-portfolio/static/media/loboadv.e9e767f8e67d6efcac32.png",
+    "static/media/pokedex.png": "/my-portfolio/static/media/pokedex.0318946f598554ea60c0.png",
+    "static/media/valorant agent.png": "/my-portfolio/static/media/valorant agent.13ed2d76c1aa9aa02ac0.png",
+    "static/media/pass_gene.png": "/my-portfolio/static/media/pass_gene.da408bdee9eead861745.png",
+    "static/media/vec.png": "/my-portfolio/static/media/vec.d4e378e0ccf5e82df29e.png",
+    "static/media/pass_checekr.png": "/my-portfolio/static/media/pass_checekr.e7e65c1577489230afb1.png",
+    "static/media/5.png": "/my-portfolio/static/media/5.f0728b94222d183f2091.png",
+    "static/media/20.png": "/my-portfolio/static/media/20.b9e5b04222d3fe0c69a2.png",
+    "static/media/secret_word.png": "/my-portfolio/static/media/secret_word.062abc5084433e3490e4.png",
+    "static/media/16.png": "/my-portfolio/static/media/16.340217db2d123ca5db04.png",
+    "static/media/18.png": "/my-portfolio/static/media/18.95aa795c74c9f0bab3e5.png",
+    "static/media/to_do.png": "/my-portfolio/static/media/to_do.83f45c78e59c3ce2361d.png",
+    "static/media/9.png": "/my-portfolio/static/media/9.c5fca3d601314d39ddbb.png",
+    "static/media/11.png": "/my-portfolio/static/media/11.b582c889706991a60de0.png",
+    "static/media/12.png": "/my-portfolio/static/media/12.dfebd3f8c0e1a48b499a.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.17325147.css.map": "/my-portfolio/static/css/main.17325147.css.map",
+    "main.923fdb03.js.map": "/my-portfolio/static/js/main.923fdb03.js.map",
+    "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17325147.css",
+    "static/js/main.923fdb03.js"
+  ]
+}
