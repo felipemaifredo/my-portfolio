@@ -110,3 +110,23 @@
     padding: 5px;
     color: var(--color-3);;
 }
+
+@media (max-width: 900px) {
+    #projects {
+        height: auto;
+        padding: 70px 0;
+        background-color: var(--color-1);
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #projects .column-item .title-box-item {
+        background-color: var(--color-3);
+        height: 250px;
+        border-radius: 20px;        
+    }
+
+    #projects .isfliped {
+        flex-direction: column;
+    }
+}

@@ -22,7 +22,7 @@ export const changeTextsHomeBR = () => {
       TextsAbout[3].innerText = 'Neste portfolio, compartilho alguns dos meus projetos mais empolgantes, nos quais pude aplicar meus conhecimentos e criatividade. Cada linha de código representa meu empenho e dedicação para entregar soluções eficientes e elegantes.';
       TextsAbout[4].innerText = 'Espero que este espaço seja uma porta de entrada para que você conheça mais sobre mim, meu trabalho e minha paixão pela programação. Sinta-se à vontade para explorar meus projetos e entrar em contato. Estou sempre aberto a novas oportunidades e parcerias emocionantes!';
     }
-/*
+
     let TextsSkills = document.querySelectorAll('.texts-skills');
     if (TextsSkills) {
       TextsSkills[0].innerText = 'Habilidades';
@@ -33,12 +33,12 @@ export const changeTextsHomeBR = () => {
     if (TextsProjects) {
       TextsProjects[0].innerText = 'Projetos';
       TextsProjects[1].innerText = 'Ferramentas criadas para treinar e me aprimorar em desenvolvimento web.';
-      TextsProjects[2].innerText = 'Meus trabalhos reais';
-      TextsProjects[3].innerText = 'Trabalhos';
+      TextsProjects[2].innerText = 'Trabalhos';
+      TextsProjects[3].innerText = 'Meus trabalhos reais';
       TextsProjects[4].innerText = 'Biblioteca';
       TextsProjects[5].innerText = 'Componentes prontos que podem ser copiados.';
-      TextsProjects[6].innerText = 'Sites prontos.';
-      TextsProjects[7].innerText = 'Galeria';      
+      TextsProjects[6].innerText = 'Galeria';      
+      TextsProjects[7].innerText = 'Sites prontos.';
     }
 
     let TextsContact = document.querySelectorAll('.texts-contact');
@@ -49,7 +49,7 @@ export const changeTextsHomeBR = () => {
       TextsContact[3].innerText = 'Email ou WhatsApp';
       TextsContact[4].innerText = 'Assunto';
     }
-    */
+
   };
   
   export const changeTextsHomeUS = () => {
@@ -78,7 +78,7 @@ export const changeTextsHomeBR = () => {
       TextsAbout[4].innerText = 'I hope this space is a gateway for you to know more about me, my work and my passion for programming. Feel free to explore my projects and get in touch. I am always open to new opportunities and exciting partnerships!';
     }
 
-    /*let TextsSkills = document.querySelectorAll('.texts-skills');
+    let TextsSkills = document.querySelectorAll('.texts-skills');
     if (TextsSkills) {
       TextsSkills[0].innerText = 'Skills';
       TextsSkills[1].innerText = 'Technologies I master';
@@ -88,12 +88,12 @@ export const changeTextsHomeBR = () => {
     if (TextsProjects) {
       TextsProjects[0].innerText = 'Projects';
       TextsProjects[1].innerText = 'Tools created to train and improve myself in web development.';
-      TextsProjects[2].innerText = 'My real jobs';
-      TextsProjects[3].innerText = 'Works';
+      TextsProjects[2].innerText = 'Works';
+      TextsProjects[3].innerText = 'My real jobs';
       TextsProjects[4].innerText = 'Library';
       TextsProjects[5].innerText = 'Ready-made components that can be copied.';
-      TextsProjects[6].innerText = 'Ready-made websites.';
-      TextsProjects[7].innerText = 'Gallery';      
+      TextsProjects[6].innerText = 'Gallery';      
+      TextsProjects[7].innerText = 'Ready-made websites.';
     }
   
     let TextsContact = document.querySelectorAll('.texts-contact');
@@ -104,5 +104,4 @@ export const changeTextsHomeBR = () => {
       TextsContact[3].innerText = 'Email or WhatsApp';
       TextsContact[4].innerText = 'Subject';
     }
-    */
   };

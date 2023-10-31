@@ -199,3 +199,18 @@
         animation: animation-progress .5s .8s forwards;
     }
 }
+
+
+@media (max-width: 900px) {
+    
+    #skills {
+        height: auto;
+        padding-bottom: 0;
+        padding: 50px 0;
+    }
+
+    #elementEXP {
+        display: none;
+    }
+
+}

@@ -117,8 +117,8 @@ const Skills = () => {
         <section id='skills'>
             <Observer threshold={[0, 0.5, 1]}>  
                   <div className='init-hidden title-box-skills'>
-                    <h2 tabIndex={4}>Habilidades</h2>
-                    <p tabIndex={5}>Tecnologias que eu domino</p>
+                    <h2 tabIndex={4} className='texts-skills'>Habilidades</h2>
+                    <p tabIndex={5} className='texts-skills'>Tecnologias que eu domino</p>
                   </div>
             </Observer>
             <div className='logos-box'>

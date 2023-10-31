@@ -23,3 +23,19 @@
     color: var(--color-3);
     text-align: left;
 }
+
+
+@media (max-width: 900px) {
+    #about {
+        height: auto;
+        overflow: hidden;
+        padding: 50px 0px;
+    }
+
+    #about h2 {
+        width: 80%;
+        font-size: 2.5rem;
+        text-align: left;
+
+    }
+}

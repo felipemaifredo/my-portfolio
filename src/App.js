@@ -19,7 +19,6 @@ function App() {
      <HashRouter>
         <Navbar />
         <NavConfig />
-
         <Routes>
           <Route path='/' element={ <Home /> } />
           <Route path='/projects' element={<ProjectsPage />}/>
