@@ -39,6 +39,7 @@
 
 #contact .text-box-contact .social-links-box a {
     height: 50px;
+    width: 50px;
     color: var(--color-1);
 }
 

@@ -88,16 +88,6 @@
 }
 
 #projects .column-item .info-box-item {
-    background-color: var(--color-4);
-    height: 30%;
-    display: grid;
-    place-items: center;
-    border-radius: 20px;
-    box-shadow: 10px 8px 44px -9px rgb(0, 0, 0);
-    -webkit-box-shadow: 10px 8px 44px -9px rgb(0, 0, 0);
-    -moz-box-shadow: 10px 8px 44px -9px rgb(0, 0, 0);
-    transition: all 1s;
-
     &:hover {
         transition: all .2s;
         transform: scale(1.02);
@@ -108,7 +98,16 @@
     font-size: 1.3rem;
     text-align: center;
     padding: 5px;
-    color: var(--color-3);;
+    color: var(--color-3);
+    background-color: var(--color-4);
+    height: 30%;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 8px 44px -9px rgb(0, 0, 0);
+    -webkit-box-shadow: 10px 8px 44px -9px rgb(0, 0, 0);
+    -moz-box-shadow: 10px 8px 44px -9px rgb(0, 0, 0);
+    transition: all 1s;
 }
 
 @media (max-width: 900px) {
