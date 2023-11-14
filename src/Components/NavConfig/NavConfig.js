@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 
 //Components
 import ChangeIdiom from '../ChangeIdiom/ChangeIdiom';
+import ChangeColor from '../ChangeColor/ChangeColor';
 
 const NavConfig = () => {
     const [ navConfig, setNavConfig] = useState(null);
@@ -25,6 +26,7 @@ const NavConfig = () => {
             </div>
             <div className='menu-flex'>
                 <ChangeIdiom />
+                <ChangeColor />
             </div>
         </div>
     )

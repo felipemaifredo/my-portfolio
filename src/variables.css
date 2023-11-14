@@ -5,10 +5,18 @@ body[data-theme="t-light"][data-color="t-green"] {
     --color-3:#599636;
     --color-4:#edeced;
 }
-body[data-theme="t-light"][data-color="t-rose"] {
+
+body[data-theme="t-light"][data-color="t-pink"] {
     --color-1: #ffffff;
     --color-2: #000000;
     --color-3: #b367ac;
+    --color-4: #edeced;
+}
+
+body[data-theme="t-light"][data-color="t-red"] {
+    --color-1: #ffffff;
+    --color-2: #000000;
+    --color-3: #e41b1b;
     --color-4: #edeced;
 }
 /*---- FIM COLORS WHITE -----*/
@@ -19,7 +27,7 @@ body[data-theme="t-dark"][data-color="t-green"] {
     --color-3:#344d26;
     --color-4:#919191;
 }
-body[data-theme="t-dark"][data-color="t-rose"] {
+body[data-theme="t-dark"][data-color="t-pink"] {
     --color-1: #ffffff;
     --color-2: #000000;
     --color-3: #b367ac;
