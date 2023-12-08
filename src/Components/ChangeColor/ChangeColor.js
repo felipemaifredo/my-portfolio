@@ -1,10 +1,9 @@
 //Imports
 import './changecolor.style.css';
 import { useState, useEffect } from 'react';
-// data-color="t-green"
 
 const ChangeColor = () => {
-    const [color, setColor] = useState(localStorage.getItem('color') || 't-green');
+    const [color, setColor] = useState(localStorage.getItem('color') || 'green');
     const [colorDestaque, setColorDestaque] = useState('')
     const [colorActive, setColorActive] = useState(false);
 

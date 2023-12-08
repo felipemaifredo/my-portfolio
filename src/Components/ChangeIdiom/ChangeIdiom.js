@@ -39,8 +39,8 @@ function ChangeIdiom() {
       case '/':
           changeTextsHomeBR();
         break;
-      case '/projects':
-          changeTextsProjectsBR();
+      /*case '/projects':
+          changeTextsProjectsBR();*/
         break;
       case '/library':
           changeTextsLibraryBR();

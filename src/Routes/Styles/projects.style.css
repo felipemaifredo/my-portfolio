@@ -6,6 +6,7 @@
     width: 100vw;
     padding: 80px 0;
     display: flex;
+    
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -41,9 +42,18 @@
         border-radius: 20px 20px 0 0;
     }
 
+#projects-page .card-item .content-box {
+    height: 45%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #projects-page .card-item .title-box {
-    height: 10%;
-    width: 100%;
+    width: 95%;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +64,6 @@
     }
 
 #projects-page .card-item .text-box {
-    height: 35%;
     width: 95%;
     display: flex;
     align-items: center;
@@ -93,3 +102,45 @@
             width: 60%;
             color: var(--color-1);
         }
+
+#projects-page .card-item .tech-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 40px;
+}
+
+#projects-page .card-item .tech-box .tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+#projects-page .card-item .tech-box .tech-js {
+    background-color: #d4c028;
+}
+
+#projects-page .card-item .tech-box .tech-node {
+    background-color: #7cb73f;
+}
+
+#projects-page .card-item .tech-box .tech-react {
+    background-color: #5ed3f3;
+}
+
+#projects-page .card-item .tech-box span {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#projects-page .card-item .tech-box span svg {
+    color: var(--color-1);
+}
+
+#projects-page .card-item .tech-box p {
+    color: var(--color-1);
+}
+
