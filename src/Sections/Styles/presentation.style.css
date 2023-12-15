@@ -22,6 +22,7 @@
     align-items: center;
     gap: 0px;
     margin-top: -100px;
+    display: none;
 }
 
 #presentation .hi-box h1 .span-1 {
@@ -85,5 +86,55 @@
     #presentation .aside-animation {
         width: 100%;
         height: 50%;
+    }
+}
+
+.animation-letter-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+}
+
+.span-space {
+    display: inline-block;
+    width: 15px;
+}
+
+.animation-letter-box .span-container {
+    display: flex;
+    gap: .5px;
+    color: var(--color-3);
+    font-weight: 600;
+}
+
+.content1 > .span-letter {
+    font-size: 23rem;
+    margin-bottom: -100px;
+}
+
+.content2 > .span-letter {
+    font-size: 6.5rem;
+}
+
+.content3 > .span-letter {
+    font-size: 3.7rem;
+}
+
+.span-clicked {
+    animation: animation2 .5s;
+}
+
+@keyframes animation2 {
+    25% {
+        transform: scale(0.8, 1.1);
+    }
+
+    50% {
+        transform: scale(1.05, 0.8);
+    }
+    75% {
+        transform: scale(0.7, 1.2);
     }
 }

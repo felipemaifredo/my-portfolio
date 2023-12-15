@@ -39,8 +39,8 @@ function ChangeIdiom() {
       case '/':
           changeTextsHomeBR();
         break;
-      /*case '/projects':
-          changeTextsProjectsBR();*/
+      case '/projects':
+          changeTextsProjectsBR();
         break;
       case '/library':
           changeTextsLibraryBR();
@@ -51,7 +51,7 @@ function ChangeIdiom() {
     
       default:
         break;
-    }
+    };
   };
 
   const changeTextsUS = () => {
@@ -71,7 +71,7 @@ function ChangeIdiom() {
     
       default:
         break;
-    }
+    };
   };
 
   return (
