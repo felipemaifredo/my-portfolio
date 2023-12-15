@@ -9,7 +9,6 @@ import BgMouseAnimation from '../Components/Background_mouse_animation/bgMouseAn
 const Presentation = () => {
     const bgAnimations = [<MatrixRain />, <BgMouseAnimation />];
 
-
     function selectBg() {
         let randonNumber = Math.floor(Math.random() * bgAnimations.length);
         return bgAnimations[randonNumber];
@@ -51,49 +50,55 @@ const Presentation = () => {
                     <span className='span-2 texts-presentation'>Sou o Felipe,</span>
                     <span className='span-box-options texts-presentation'> Desenvolvedor FullStack </span>
                 </h1>
-                <div class="animation-letter-box" aria-hidden="true">
-                    <span class="span-container content1">
-                        <span class="span-letter">O</span>
-                        <span class="span-letter">l</span>
-                        <span class="span-letter">á</span>
-                    </span>
-                    <span class="span-container content2">
-                        <span class="span-letter">S</span>
-                        <span class="span-letter">o</span>
-                        <span class="span-letter">u</span>
-                        <span class="span-space"></span>
-                        <span class="span-letter">o</span>
-                        <span class="span-space"></span>
-                        <span class="span-letter">F</span>
-                        <span class="span-letter">e</span>
-                        <span class="span-letter">l</span>
-                        <span class="span-letter">i</span>
-                        <span class="span-letter">p</span>
-                        <span class="span-letter">e</span>
-                    </span>
-                    <span class="span-container content3">
-                        <span class="span-letter">F</span>
-                        <span class="span-letter">u</span>
-                        <span class="span-letter">l</span>
-                        <span class="span-letter">l</span>
-                        <span class="span-space"></span>
-                        <span class="span-letter">S</span>
-                        <span class="span-letter">t</span>
-                        <span class="span-letter">a</span>
-                        <span class="span-letter">c</span>
-                        <span class="span-letter">k</span>
-                        <span class="span-space"></span>
-                        <span class="span-letter">D</span>
-                        <span class="span-letter">e</span>
-                        <span class="span-letter">v</span>
-                        <span class="span-letter">e</span>
-                        <span class="span-letter">l</span>
-                        <span class="span-letter">o</span>
-                        <span class="span-letter">p</span>
-                        <span class="span-letter">e</span>
-                        <span class="span-letter">r</span>
-                    </span>
-                </div>
+                <Observer threshold={[0, 0.5, 1]}>  
+                    <div class="animation-letter-box init-hidden" aria-hidden="true">
+                        <span class="span-container content1">
+                            <span class="span-letter">O</span>
+                            <span class="span-letter">i</span>
+                            <span class="span-letter">!</span>
+                        </span>
+                        <span class="span-container content2">
+                            <span class="span-letter">S</span>
+                            <span class="span-letter">o</span>
+                            <span class="span-letter">u</span>
+                            <span class="span-space"></span>
+                            <span class="span-letter">o</span>
+                            <span class="span-space"></span>
+                            <span class="span-letter">F</span>
+                            <span class="span-letter">e</span>
+                            <span class="span-letter">l</span>
+                            <span class="span-letter">i</span>
+                            <span class="span-letter">p</span>
+                            <span class="span-letter">e</span>
+                        </span>
+                        <span class="span-container content3">
+                            <span class="span-letter">D</span>
+                            <span class="span-letter">e</span>
+                            <span class="span-letter">s</span>
+                            <span class="span-letter">e</span>
+                            <span class="span-letter">n</span>
+                            <span class="span-letter">v</span>
+                            <span class="span-letter">o</span>
+                            <span class="span-letter">l</span>
+                            <span class="span-letter">v</span>
+                            <span class="span-letter">e</span>
+                            <span class="span-letter">d</span>
+                            <span class="span-letter">o</span>
+                            <span class="span-letter">r</span>
+                            <span class="span-space"></span>
+                            <span class="span-letter">F</span>
+                            <span class="span-letter">u</span>
+                            <span class="span-letter">l</span>
+                            <span class="span-letter">l</span>
+                            <span class="span-space"></span>
+                            <span class="span-letter">S</span>
+                            <span class="span-letter">t</span>
+                            <span class="span-letter">a</span>
+                            <span class="span-letter">c</span>
+                            <span class="span-letter">k</span>
+                        </span>
+                    </div>
+                </Observer>
             </div>
             <div className='aside-animation'>
                {selectBg()}
