@@ -7,4 +7,4 @@ const PageTransition = () => {
     }, 1001)
 }
 
-export default PageTransition;
+export default PageTransition
